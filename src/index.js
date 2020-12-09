@@ -22,3 +22,10 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
+function search(event) {
+  event.preventDefault();
+  let cityElement = document.querySelector("#city");
+  let cityInput = document.querySelector("#city-input");
+  cityElement.innerHTML = cityInput.value;
+}
